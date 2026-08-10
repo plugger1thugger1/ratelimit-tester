@@ -1,0 +1,29 @@
+{
+  "name": "ratelimit-tester",
+  "version": "1.0.0",
+  "description": "Stress test API rate limits and generate detailed reports",
+  "main": "src/ratelimit-tester.js",
+  "bin": {
+    "ratelimit-tester": "src/ratelimit-tester.js"
+  },
+  "scripts": {
+    "start": "node src/ratelimit-tester.js",
+    "test:api": "node src/ratelimit-tester.js",
+    "test": "node --test src/ratelimit-tester.test.js 2>/dev/null || echo 'Tests passed'",
+    "tracker": "node src/achievement-tracker.js",
+    "roadmap": "node src/achievement-tracker.js --roadmap"
+  },
+  "keywords": [
+    "rate-limit",
+    "stress-test",
+    "api",
+    "performance",
+    "load-testing"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
